@@ -1,9 +1,9 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class player : MonoBehaviour
+public class playerMove : MonoBehaviour
 {
     NavMeshAgent agent;
     void Start()
@@ -14,12 +14,12 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity))
-                {
+            if(Physics.Raycast(ray, out hit, Mathf.Infinity))
+            {
                 agent.SetDestination(hit.point);
             }
         }
