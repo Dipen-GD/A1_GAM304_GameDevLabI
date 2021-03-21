@@ -20,12 +20,12 @@ public class ChangeBackground : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-            Change(0.05f);
+    //void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.A))
+    //        Change(0.05f);
 
-        if (Input.GetKeyDown(KeyCode.B))
-            Change(-0.05f);
-    }
+    //    if (Input.GetKeyDown(KeyCode.B))
+    //        Change(-0.05f);
+    //}
 }

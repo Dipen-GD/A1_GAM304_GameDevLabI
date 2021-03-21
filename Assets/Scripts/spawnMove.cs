@@ -14,8 +14,14 @@ public class spawnMove : MonoBehaviour
     void Update()
     {
         transform.Translate(moveVector * moveSpeed * Time.deltaTime);
-        Destroy(gameObject, 10);
+        Destroy(gameObject, 2);
     }
 
-    
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.name == "player")
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
