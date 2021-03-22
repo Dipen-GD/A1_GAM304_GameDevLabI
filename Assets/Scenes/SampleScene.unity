@@ -314,6 +314,7 @@ GameObject:
   - component: {fileID: 1173394906}
   - component: {fileID: 1173394905}
   - component: {fileID: 1173394911}
+  - component: {fileID: 1173394912}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -387,7 +388,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 35fcf2387291548458a46164aacb7e0d, type: 2}
+  - {fileID: 2100000, guid: aa385c294b273d844a2a9ab7d5ae0c66, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -447,6 +448,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1173394912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173394904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea2bf7a20aca8e7449ff50500448f5f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1542932607
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,8 +614,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnees:
-  - {fileID: 3102416944354732812, guid: 472534c19f7639c4a956ef6f5704fe62, type: 3}
-  - {fileID: 2361585211335545871, guid: 6472763a28d839147ba5bab5cfba4cf4, type: 3}
+  - {fileID: 6911125651379344047, guid: b0132c5d610a2874797c518bc6ae056e, type: 3}
+  - {fileID: 9054544082492510420, guid: d6e4191d7f878ae4a8197c5e94e25d83, type: 3}
   spawnPos: {x: 8, y: 0, z: 0}
   spawnDelay: 0
   spawnMaxDelay: 1
