@@ -8,12 +8,16 @@ public class playerMove : MonoBehaviour
     private ChangeBackground _ChangeBackground;
   
     NavMeshAgent agent;
+    
+
     void Start()
     {
 
         _ChangeBackground = FindObjectOfType<ChangeBackground>();
 
         agent = GetComponent<NavMeshAgent>();
+
+       
 
        
     }
@@ -38,14 +42,17 @@ public class playerMove : MonoBehaviour
     {
         if (collision.gameObject.tag == "red")
         {
-            _ChangeBackground.Change(0.2f);
+            _ChangeBackground.Change(0.05f);
+            
         }
 
         if (collision.gameObject.tag == "blue")
         {
-            _ChangeBackground.Change(-0.2f);
+            _ChangeBackground.Change(-0.05f);
+            
         }
 
 
     }
+    
 }

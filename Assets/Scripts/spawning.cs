@@ -49,6 +49,10 @@ public class spawning : MonoBehaviour
        
        
     }
+    public void StopSpawning()
+    {
+        StopAllCoroutines();
+    }
 
 
 
